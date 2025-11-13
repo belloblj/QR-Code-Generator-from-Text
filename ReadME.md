@@ -1,7 +1,7 @@
 # QR Code Generator
 
 A simple web-based QR Code Generator built with HTML, CSS, and JavaScript. Users can enter text or URLs, select QR code size, generate a branded QR code using the QuickChart API, and download it instantly.
-
+check it out on: https://qr-code-generator-from-text.vercel.app/
 ## Features
 - Generate QR codes with custom text or URLs
 - Choose from multiple size options (100x100 to 300x300)
@@ -23,4 +23,5 @@ A simple web-based QR Code Generator built with HTML, CSS, and JavaScript. Users
 5. Use **Clear** to reset the form
 
 ## Credits
+
 Developed by Bolaji A. Bello © 2023
