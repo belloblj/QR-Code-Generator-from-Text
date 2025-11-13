@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="qr-code-animate_020347.svg" alt="scan to pay image" aria-hidden="true">
+
+    <h2 class="title">QR Code Generator</h2>
+
+    <div class="generatedQR">
+      <img src="placeholderqr.png" id="img" alt="QR Code will appear here">
+      <button id="downloadBtn">Download QR Code</button>
+      <button id="clearBtn">Clear</button>
+
+    </div>
+
+    <label for="size">Select QR Size:</label>
+    <select id="size">
+      <option value="100" selected>100x100</option>
+      <option value="150">150x150</option>
+      <option value="200">200x200</option>
+      <option value="250">250x250</option>
+      <option value="300">300x300</option>
+    </select>
+
+    <label for="qrtext">Enter Text or URL:</label>
+    <textarea id="qrtext" placeholder="Enter your Text or URL"></textarea>
+
+
+    <!-- generate button on click -->
+    <button onclick="genQR()">Generate</button> 
+
+    <!-- footer -->
+    <p>Developed By Bolaji A. Bello &#169;2023</p>
+  </div>
+
+  <!-- script -->
+  <script src="script.js"></script>
+</body>
+</html>

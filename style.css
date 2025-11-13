@@ -1,0 +1,138 @@
+
+:root {
+  --baseColor: #606468;
+  --bodyBackgroundColor: #2c3338;
+  --bodyColor: var(--baseColor);
+  --bodyFontFamily: "Open Sans", sans-serif;
+  --bodyFontSize: 0.875rem;
+  --bodyFontWeight: 400;
+  --bodyLineHeight: 1.5;
+  --formGap: 0.875rem;
+  --inputBackground: #3b4148;
+  --inputHoverBackground: #434a52;
+  --buttonBackground: #d75821;
+  --buttonHoverBackground: #d75821;
+  --buttonTextColor: #eee;
+  --borderRadius: 0.25rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: radial-gradient(75% 75% at 50% 50%, #4c2b5e 0%, #71c4ff 100%);
+  color: white;
+  font-family: var(--bodyFontFamily);
+  font-size: var(--bodyFontSize);
+  font-weight: var(--bodyFontWeight);
+  line-height: var(--bodyLineHeight);
+}
+
+.container {
+  width: 90%;
+  max-width: 20rem;
+  margin: auto;
+  display: grid;
+  gap: var(--formGap);
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.generatedQR {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}
+
+textarea,
+select {
+  width: 100%;
+  padding: 1rem;
+  border-radius: var(--borderRadius);
+  background-color: var(--inputBackground);
+  color: inherit;
+  border: none;
+  opacity: 0.7;
+  transition: background-color 0.3s;
+}
+
+textarea:hover,
+textarea:focus {
+  background-color: var(--inputHoverBackground);
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: var(--borderRadius);
+  background-color: var(--buttonBackground);
+  color: var(--buttonTextColor);
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--buttonHoverBackground);
+}
+
+p {
+  text-align: center;
+  margin-block: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#img {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+#downloadBtn {
+  margin-top: 1rem;
+  background-color: #4caf50;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: var(--borderRadius);
+  padding: 1rem;
+  cursor: pointer;
+  width: 60%;
+}
+
+#downloadBtn:hover {
+  background-color: #3e8e41;
+}
+
+#clearBtn {
+  margin-top: 0.5rem;
+  background-color: #d33030;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: var(--borderRadius);
+  padding: 1rem;
+  cursor: pointer;
+  width: 30%;
+}
+
+#clearBtn:hover {
+  background-color: #555;
+}
